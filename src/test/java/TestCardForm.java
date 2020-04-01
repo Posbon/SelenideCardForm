@@ -17,7 +17,7 @@ public class TestCardForm {
         LocalDate dateToBe = today.plusDays(3);
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
         String dateToUse = dateToBe.format(formatter);
-        open("http://localhost:7777");
+        open("http://localhost:9999");
         $("[data-test-id=city] input").setValue("Биробиджан");
         $("[data-test-id=date] input").sendKeys(Keys.chord(Keys.CONTROL, "a", Keys.DELETE));
         $("[data-test-id=date] input").setValue(dateToUse);
